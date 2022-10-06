@@ -1,0 +1,96 @@
+header {
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: $color--primario;
+    .container{
+        margin: 0 auto;
+    }
+    .logo { 
+        color: white;
+        font-size: 25px;
+        float: left;
+        font-weight: 600;
+        line-height: 80px;
+        padding-top: 10px;
+    }
+    .menu ul{
+        float: right;
+        li{
+            float: left;
+            a{
+                color: white; 
+                font-weight: 500;
+                font-size: 16px;
+                display: block;
+                line-height: 80px;
+                padding: 0 10px;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+header .menu ul li a.actual, header .menu ul li:hover a{
+    background-color: $color--seleccion;
+
+}
+
+@media (max-width: 952px){
+    header {
+        .menu{ 
+            ul{ 
+                li{ 
+                    a{ 
+        font-size: 12px;
+        }
+            }
+                }
+                    }
+                    .logo {
+                        font-size: 16px;
+                        padding-left: 5px;
+            }        
+                }
+        
+}
+
+@media (max-width: 858px) {
+    .boton__check {
+        display:block;
+    }
+
+    header {
+        position: sticky;
+        top: 0px;
+        .menu {
+            ul {
+            position: fixed;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background: $color--secundario;
+            top: 80px;
+            left: -100%;
+            text-align: center!important;
+            transition: all 0.5s;
+            li {
+                margin: 50px 0;
+                line-height: 30px;
+                a {
+                    font-size: 20px;
+                    
+                }
+            }
+        }
+    }
+    }
+    li a:hover, li a.actual {
+        background: none;
+        color: $color--primario;
+    }
+}

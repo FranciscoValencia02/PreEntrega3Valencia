@@ -1,0 +1,34 @@
+footer{
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    background: $color--primario;
+}
+
+
+.contenido-footer{
+    display: flex;
+    .caja-footer{
+        flex-basis: 50%;
+        padding: 10px 20px;
+    }
+}
+
+.boton-social-footer {
+    svg{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    color: $color--seleccion;
+}
+}
+
+
+
+
+.iconos-footer {
+    color: $color--seleccion;
+    padding: 2px 2px
+}
+

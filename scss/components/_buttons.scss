@@ -1,0 +1,33 @@
+.boton__check{
+    color: white;
+    float: right;
+    cursor: pointer;
+    line-height: 80px;
+    margin-left: 10px;
+    display: none;
+}
+
+#check{
+    display: none;
+    &:checked ~ ul{
+        left: 0;
+    }
+}
+
+.redes{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .contacto-boton{
+        text-align: center;
+        background-color: $color--boton;
+        color: $color--secundario;
+        margin: 100px;
+        height: 75px;
+        width: 150px;
+        padding-top: 30px;
+
+    }
+}

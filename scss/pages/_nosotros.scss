@@ -1,0 +1,32 @@
+.caja-nosotros{
+    text-align: center;
+    z-index: -2;
+    background-color: $color--secundario;
+    margin: 30px;
+    padding: 20px;
+    h2{
+        font-size: 2rem;
+    }
+    img{
+        height: 200px;
+        width: 150px;
+    }
+    .nombre-nosotros{
+        font-size: 1.5rem;
+    }
+    .contenido-nosotros{
+        font-weight: 25;
+        margin: auto;
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 695px) {
+    .caja-nosotros{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
